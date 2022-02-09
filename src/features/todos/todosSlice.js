@@ -1,14 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit"
 
 const todoSlice = createSlice({
-  name: 'todos',
+  name: "todos",
   initialState: [
-    { id: 1, txt: 'rowadz' },
-    { id: 2, txt: 'rowadz02' },
-    { id: 3, txt: 'rowadz03' },
+    { id: 1, txt: "rowadz" },
+    { id: 2, txt: "rowadz02" },
+    { id: 3, txt: "rowadz03" },
   ],
   reducers: {
     add(state, { payload }) {
+      console.log(
+        "DEBUG: - file: todosSlice.js - line 12 - add - payload",
+        payload
+      )
+      console.log("DEBUG: - file: todosSlice.js - line 12 - add - state", state)
+
       state.push(payload)
     },
     del(state, { payload: index }) {

@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counter/counterSlice'
-import todosReducer from '../features/todos/todosSlice'
-import postsReducer from '../features/posts/postsSlice'
-import usersReducer from '../features/users/usersSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "../features/counter/counterSlice";
+import todosReducer from "../features/todos/todosSlice";
+import postsReducer from "../features/posts/postsSlice";
+import usersReducer from "../features/users/usersSlice";
 
 export default configureStore({
   reducer: {
@@ -11,4 +11,4 @@ export default configureStore({
     posts: postsReducer,
     users: usersReducer,
   },
-})
+});

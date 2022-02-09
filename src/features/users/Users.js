@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { fetchData } from './usersSlice'
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchData } from "./usersSlice";
 
 const Users = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchData())
-  }, [dispatch])
-  return <div></div>
-}
+    dispatch(fetchData());
+  }, [dispatch]);
+  return <div>test</div>;
+};
 
-export default Users
+export default Users;
